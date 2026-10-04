@@ -1,0 +1,48 @@
+/* Tilesday website: the app's felt and jade, readable first. */
+:root {
+  --felt: #f1e8d6;
+  --panel: #fbf7ee;
+  --ink: #1d1b16;
+  --muted: #5d574b;
+  --jade: #1b6b55;
+  --gold: #b7791f;
+  --crak: #b3261e;
+  --dot: #1f4e8c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --felt: #16222b;
+    --panel: #22313b;
+    --ink: #f3efe6;
+    --muted: #b9b2a3;
+    --jade: #5fc3a2;
+    --gold: #e3a84a;
+    --crak: #f08a7f;
+    --dot: #8fb6ef;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--felt);
+  color: var(--ink);
+  font: 18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main, header, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+header a.brand { font-weight: 700; font-size: 22px; color: var(--ink); text-decoration: none; }
+nav a { color: var(--jade); margin-left: 14px; text-decoration: none; font-weight: 600; font-size: 16px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 32px 0 8px; }
+h2 { font-size: 24px; margin: 36px 0 8px; }
+p.lede { font-size: 20px; color: var(--muted); margin-top: 0; }
+a { color: var(--jade); }
+.panel { background: var(--panel); border-radius: 16px; padding: 16px 20px; margin: 16px 0; }
+.hand { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; }
+.green { color: var(--jade); }
+.red { color: var(--crak); }
+.blue { color: var(--dot); }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid rgba(0,0,0,0.08); vertical-align: top; }
+.cta { display: inline-block; background: var(--jade); color: #fff; padding: 12px 22px; border-radius: 999px; text-decoration: none; font-weight: 700; margin: 8px 0; }
+.note { color: var(--muted); font-size: 16px; }
+footer { padding: 40px 16px 48px; color: var(--muted); font-size: 15px; }

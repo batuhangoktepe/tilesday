@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://batuhangoktepe.github.io/tilesday/sitemap.xml
